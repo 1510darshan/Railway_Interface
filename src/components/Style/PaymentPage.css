@@ -1,0 +1,299 @@
+/* PaymentPage.css */
+
+.payment-page {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .payment-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .payment-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .payment-header h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .booking-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pnr-number {
+    font-weight: 600;
+    color: #0056b3;
+    font-size: 14px;
+  }
+  
+  .journey-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .journey-route {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .journey-date {
+    color: #555;
+    font-size: 12px;
+  }
+  
+  /* Booking Summary Card */
+  .booking-summary-card {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-summary-card h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .summary-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .total-fare {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0056b3;
+  }
+  
+  /* Payment Form */
+  .payment-form {
+    margin-top: 20px;
+  }
+  
+  .payment-form h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-option {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .payment-option:hover {
+    background-color: #eee;
+  }
+  
+  .payment-option input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .payment-amount {
+    background-color: #f0f7ff;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .payment-amount h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-amount .amount {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0056b3;
+  }
+  
+  /* Buttons */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004494;
+  }
+  
+  .btn-secondary {
+    background-color: #e9ecef;
+    color: #495057;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #dde2e6;
+  }
+  
+  .btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* Success container */
+  .success-container {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 20px;
+  }
+  
+  .success-container h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  /* Loading and Error */
+  .loading-container,
+  .error-container {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #0056b3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .error-message {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    border-left: 4px solid #e53e3e;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .payment-page .container {
+      padding: 15px;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    .payment-methods {
+      flex-direction: column;
+    }
+    
+    .booking-summary-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .journey-details {
+      align-items: flex-start;
+      margin-top: 5px;
+    }
+  }

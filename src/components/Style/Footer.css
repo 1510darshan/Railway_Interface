@@ -1,0 +1,256 @@
+
+/* Footer Styles */
+
+
+.irctc-footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 60px 0 30px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-col h4 {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.footer-col h4:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.footer-col ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-col ul li a {
+    color: var(--light-gray);
+    transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+    color: var(--white);
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.facebook::before,
+.twitter::before,
+.instagram::before,
+.youtube::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: var(--white);
+}
+
+.facebook::before {
+    clip-path: polygon(40% 40%, 40% 20%, 60% 20%, 60% 40%, 80% 40%, 80% 60%, 60% 60%, 60% 80%, 40% 80%, 40% 60%, 20% 60%, 20% 40%);
+}
+
+.twitter::before {
+    clip-path: polygon(20% 30%, 40% 30%, 40% 20%, 60% 20%, 60% 30%, 80% 30%, 80% 40%, 60% 40%, 60% 50%, 40% 50%, 40% 60%, 20% 60%);
+}
+
+.instagram::before {
+    border-radius: 4px;
+    position: relative;
+}
+
+.instagram::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--dark-gray);
+    border-radius: 50%;
+}
+
+.youtube::before {
+    clip-path: polygon(20% 30%, 80% 50%, 20% 70%);
+}
+
+.helpline {
+    margin-top: 1.5rem;
+}
+
+.helpline p {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.helpline a {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment-methods span {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.payment-icons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.payment-icon {
+    width: 40px;
+    height: 24px;
+    background-color: var(--white);
+    border-radius: 4px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.payment-icon:hover {
+    transform: translateY(-3px);
+}
+
+.visa::before {
+    content: "VISA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1a1f71;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.mastercard::before,
+.mastercard::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mastercard::before {
+    background-color: #eb001b;
+    left: 6px;
+}
+
+.mastercard::after {
+    background-color: #f79e1b;
+    right: 6px;
+}
+
+.rupay::before {
+    content: "RuPay";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1a1f71;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.upi::before {
+    content: "UPI";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #097339;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.netbanking::before {
+    content: "Net";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+    }
+
+    .footer-col h4:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
